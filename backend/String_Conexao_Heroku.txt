@@ -1,0 +1,9 @@
+User: duxwrmhpcfuohb
+Pass: 3da3831cfcf7c25c47f1188c624dae20bcd1df9d570092029ba1facd62745936
+Servidor: ec2-107-20-15-85.compute-1.amazonaws.com
+Porta: 5432
+Database: dfqjfraid9m6jg
+
+
+
+
