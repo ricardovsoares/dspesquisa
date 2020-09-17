@@ -3,8 +3,8 @@ import axios from 'axios';
 import './style.css';
 import { RecordsResponse } from './types';
 import { formatDate } from './helpers';
-import Pagination from './pagination/index';
-import { Link } from 'react-router-dom';
+import Pagination from '../pagination/index';
+import Filters from '../../components/filters';
 
 const BASE_URL = 'http://localhost:8080';
 
@@ -33,13 +33,7 @@ const Records = () => {
 
     return (
             <div className="page-container">
-                <div className="filters-container records-actions">
-                    <Link to="/charts">
-                        <button className="action-filters">
-                            VER GRÁFICOS
-                        </button>
-                    </Link>
-                </div>
+                <Filters link="/charts" linkText="VER GRÁFICOS" />
                 <table className="records-table" cellPadding="0" cellSpacing="0">
                     <thead>
                         <tr>
