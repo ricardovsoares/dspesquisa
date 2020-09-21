@@ -16,7 +16,7 @@ export const pieOptions = {
       offsetY: "100px",
       style: {
         colors: ["#a8dadc", "#ed7947", "#00D4FF", "#ffd6a5"],
-        fontSize: "20px",
+        fontSize: "18px",
         fontFamily: "Play, sans-serif",
         fontWeight: 700,
       },
@@ -24,7 +24,7 @@ export const pieOptions = {
     plotOptions: {
       pie: {
         customScale: 0.7,
-        expandOnClick: false,
+        expandOnClick: true,
         dataLabels: {
           offset: 60,
         },
@@ -47,7 +47,7 @@ export const pieOptions = {
         horizontal: true,
         endingShape: "rounded",
         startingShape: "rounded",
-        barHeight: "60px",
+        barHeight: "35px",
       },
     },
     dataLabels: {
@@ -70,12 +70,12 @@ export const pieOptions = {
     yaxis: [
       {
         labels: {
-          maxWidth: 360,
+          maxWidth: 300,
           style: {
             colors: "#00D4FF",
             fontSize: "18px",
             fontFamily: "Play, sans-serif",
-            fontWeight: 700,
+            fontWeight: 500,
           },
         },
       },

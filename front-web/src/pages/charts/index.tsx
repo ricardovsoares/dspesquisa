@@ -6,7 +6,7 @@ import Chart from 'react-apexcharts';
 import axios from 'axios';
 import { buildBarSeries, getPlatformChartData, getGenderChartData } from './helpers'
 
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = 'https://sds1-ricardo.herokuapp.com';
 
 type PieChartData = {
     labels: string[];
@@ -62,7 +62,7 @@ const Charts = () => {
                         <Chart options={barOptions}
                          type="bar"
                          width="750"
-                         height="550"
+                         height="480"
                          series={[{ data: barChartData }]}
                       />
                     </div>
@@ -74,7 +74,8 @@ const Charts = () => {
                             options={{ ...pieOptions, labels: plataformtData.labels }}
                             type="donut"
                             series= {plataformtData?.series}
-                            width="300"
+                            width="250"
+                            height="250"
                       />
                     </div>
                     <div className="gender-chart">
@@ -83,7 +84,8 @@ const Charts = () => {
                             options={{ ...pieOptions, labels: gendertData?.labels }}
                             type="donut"
                             series= {gendertData?.series}
-                            width="300"
+                            width="250"
+                            height="250"
                       />
                     </div>
                 </div>

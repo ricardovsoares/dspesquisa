@@ -1,8 +1,8 @@
 .page-container {
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 50px;
-  padding-top: 50px;
+  margin-bottom: 30px;
+  padding-top: 30px;
 }
 
 .filters-container.records-actions {
@@ -40,7 +40,7 @@
 }
 
 .records-table tbody tr {
-  height: 45px;
+  height: 40px;
   color: #FFF;
   font-size: 18px;
 }
